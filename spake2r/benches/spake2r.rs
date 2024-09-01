@@ -26,8 +26,6 @@ fn spake2r_start_verifier(c: &mut Criterion) {
 }
 
 fn spake2r_finish(c: &mut Criterion) {
-    // this doesn't work, because s1 is consumed by doing finish()
-
     c.bench_function("spake2r_start_verifier", |b| {
         b.iter_batched(
             || {
