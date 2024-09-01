@@ -30,7 +30,7 @@ fn spake2p_finish(bench: &mut Bencher) {
 }
 */
 
-fn spake2p_start_provernd_finish(bench: &mut Bencher) {
+fn spake2p_start_prove_and_finish(bench: &mut Bencher) {
     let (_, msg2) = Spake2p::<Ed25519Group>::start_verifier(
         &Password::new(b"password"),
         &Identity::new(b"idProver"),
@@ -51,6 +51,6 @@ benchmark_group!(
     benches,
     spake2p_start,
     //spake2p_finish,
-    spake2p_start_provernd_finish
+    spake2p_start_prove_and_finish
 );
 benchmark_main!(benches);

@@ -180,6 +180,8 @@ extern crate std;
 mod ed25519;
 mod error;
 mod group;
+pub mod prover;
+pub mod verifier;
 
 pub use self::{
     ed25519::Ed25519Group,
