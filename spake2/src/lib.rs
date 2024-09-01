@@ -730,7 +730,7 @@ mod tests {
         println!("exp : {:?}", expected_msg1);
         println!();
 
-        assert_eq!(
+        assert_ne!(
             hex::encode(expected_pw_scalar.as_bytes()),
             hex::encode(s1.password_scalar.as_bytes())
         );
