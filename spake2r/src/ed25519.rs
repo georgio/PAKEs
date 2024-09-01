@@ -8,7 +8,7 @@ use rand_core::{CryptoRng, RngCore};
 use sha2::{Digest, Sha256};
 
 /// Ed25519 elliptic curve group.
-#[derive(Debug, PartialEq, Eq)]
+#[derive(Debug, PartialEq, Eq, Clone)]
 pub struct Ed25519Group;
 
 impl Group for Ed25519Group {

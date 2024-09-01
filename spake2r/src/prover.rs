@@ -14,7 +14,7 @@ use rand_core::{CryptoRng, RngCore};
 use rand_core::OsRng;
 
 /// SPake2r algorithm.
-#[derive(Eq, PartialEq)]
+#[derive(Eq, PartialEq, Clone)]
 pub struct Prover<G: Group> {
     pub(crate) id_prover: Identity,
     pub(crate) id_verifier: Identity,
