@@ -4,6 +4,7 @@ members = [
     "aucpace",
     "spake2",
     "srp",
+    "spake2p"
 ]
 
 [profile.dev]
